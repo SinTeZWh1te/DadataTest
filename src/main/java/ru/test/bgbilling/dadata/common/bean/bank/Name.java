@@ -1,34 +1,23 @@
-package ru.test.bgbilling.dadata.bean.organization;
+package ru.test.bgbilling.dadata.common.bean.bank;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * @author sintezwh1te
  */
-//@JsonIgnoreProperties(ignoreUnknown = true)
-public class Opf {
-    String type;
-    String code;
+public class Name {
+    String payment;
     @JsonProperty("full")
     String fullName;
     @JsonProperty("short")
     String shortName;
 
-    public String getType() {
-        return type;
+    public String getPayment() {
+        return payment;
     }
 
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
+    public void setPayment(String payment) {
+        this.payment = payment;
     }
 
     public String getFullName() {

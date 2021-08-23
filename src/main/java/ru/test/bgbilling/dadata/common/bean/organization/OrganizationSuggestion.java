@@ -1,8 +1,8 @@
-package ru.test.bgbilling.dadata.bean.organization;
+package ru.test.bgbilling.dadata.common.bean.organization;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import ru.test.bgbilling.dadata.bean.DadataResponse;
-import ru.test.bgbilling.dadata.bean.SuggestionType;
+import ru.test.bgbilling.dadata.common.bean.DadataResponse;
+import ru.test.bgbilling.dadata.common.bean.SuggestionType;
 
 /**
  * @author sintezwh1te

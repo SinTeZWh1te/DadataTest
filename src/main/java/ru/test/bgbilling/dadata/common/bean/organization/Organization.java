@@ -1,9 +1,11 @@
-package ru.test.bgbilling.dadata.bean.organization;
+package ru.test.bgbilling.dadata.common.bean.organization;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import ru.test.bgbilling.dadata.bean.AdditionalProperties;
 import ru.test.bgbilling.dadata.common.LocalDateDeserializer;
+import ru.test.bgbilling.dadata.common.bean.AdditionalProperties;
+import ru.test.bgbilling.dadata.common.bean.Suggestion;
+import ru.test.bgbilling.dadata.common.bean.address.Address;
 
 import java.time.LocalDate;
 
@@ -18,6 +20,7 @@ public class Organization extends AdditionalProperties {
     private OrganizationType type;
     private State state;
     private Opf opf;
+    private Name name;
     private String inn;
     private String ogrn;
     @JsonProperty("ogrn_date")
@@ -31,6 +34,7 @@ public class Organization extends AdditionalProperties {
     private String okved;
     @JsonProperty("okved_type")
     String okvedType;
+    Suggestion<Address> address;
 
     public String getKpp() {
         return kpp;
@@ -86,6 +90,14 @@ public class Organization extends AdditionalProperties {
 
     public void setOpf(Opf opf) {
         this.opf = opf;
+    }
+
+    public Name getName() {
+        return name;
+    }
+
+    public void setName(Name name) {
+        this.name = name;
     }
 
     public String getInn() {
@@ -166,6 +178,14 @@ public class Organization extends AdditionalProperties {
 
     public void setOkvedType(String okvedType) {
         this.okvedType = okvedType;
+    }
+
+    public Suggestion<Address> getAddress() {
+        return address;
+    }
+
+    public void setAddress(Suggestion<Address> address) {
+        this.address = address;
     }
 
     @Override

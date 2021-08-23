@@ -1,4 +1,4 @@
-package ru.test.bgbilling.dadata.bean;
+package ru.test.bgbilling.dadata.common.bean;
 
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;

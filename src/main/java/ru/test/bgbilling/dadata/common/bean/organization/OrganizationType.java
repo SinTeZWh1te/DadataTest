@@ -1,4 +1,4 @@
-package ru.test.bgbilling.dadata.bean.organization;
+package ru.test.bgbilling.dadata.common.bean.organization;
 
 /**
  * @author sintezwh1te

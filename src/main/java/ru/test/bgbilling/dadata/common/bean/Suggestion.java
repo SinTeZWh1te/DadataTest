@@ -1,14 +1,15 @@
-package ru.test.bgbilling.dadata.bean;
+package ru.test.bgbilling.dadata.common.bean;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import ru.test.bgbilling.dadata.common.bean.address.Address;
 
+import javax.xml.bind.annotation.XmlSeeAlso;
 import java.io.Serializable;
 
 /**
  * @author sintezwh1te
  */
+@XmlSeeAlso({Address.class})
 //@JsonIgnoreProperties(ignoreUnknown = true)
 public class Suggestion<T> implements Serializable {
     private String value;
