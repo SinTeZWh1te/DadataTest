@@ -16,10 +16,10 @@ import ru.bitel.common.Utils;
 import ru.bitel.common.logging.BGNestedContext;
 import ru.bitel.oss.kernel.entity.common.bean.EntityAttrAddress;
 import ru.bitel.oss.kernel.entity.server.utils.AddressUtils;
-import ru.test.bgbilling.dadata.client.DadataClient;
 import ru.test.bgbilling.dadata.common.bean.Suggestion;
 import ru.test.bgbilling.dadata.common.bean.address.Address;
-import ru.test.bgbilling.dadata.server.service.common.DadataService;
+import ru.test.bgbilling.dadata.server.DadataClient;
+import ru.test.bgbilling.dadata.common.DadataService;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
@@ -30,7 +30,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @WebService(
-        endpointInterface = "ru.test.bgbilling.dadata.server.service.common.DadataService"
+        endpointInterface = "ru.test.bgbilling.dadata.common.DadataService"
 )
 public class DadataServiceImpl extends AbstractService implements DadataService {
 

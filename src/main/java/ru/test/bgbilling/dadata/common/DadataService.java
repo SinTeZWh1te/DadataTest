@@ -1,4 +1,4 @@
-package ru.test.bgbilling.dadata.server.service.common;
+package ru.test.bgbilling.dadata.common;
 
 import ru.bitel.bgbilling.common.BGMessageException;
 import ru.test.bgbilling.dadata.common.bean.Suggestion;
